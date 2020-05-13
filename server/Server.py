@@ -2,6 +2,10 @@ import socketserver
 
 from server.TCPHandler import TCPHandler
 
+global send, msg
+send = []
+msg = []
+
 
 def main():
     print("Starting!")
