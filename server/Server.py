@@ -1,7 +1,6 @@
 import socketserver
 
 from server.TCPHandler import TCPHandler
-from socket import socket
 
 
 def main():
