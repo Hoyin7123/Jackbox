@@ -3,6 +3,7 @@ import socketserver
 from server.TCPHandler import TCPHandler
 from socket import socket
 
+
 def main():
     print("Starting!")
     port = input("Please input a port number: ")
