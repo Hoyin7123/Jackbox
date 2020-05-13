@@ -1,17 +1,13 @@
 import socketserver
 import threading
 
-from server.Server import send, msg
+
+def loopback():
+    while True:
+        pass
 
 
 class TCPHandler(socketserver.BaseRequestHandler):
-    def loopback(self):
-        while True:
-            if not send == []:
-                for s in send:
-                    for strings in msg:
-                        pass
 
     def handle(self):
-        send.append(self)
-        threading.Thread(target=self.loopback).start()
+        threading.Thread(target=loopback).start()
